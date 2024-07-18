@@ -1,0 +1,22 @@
+<% if(messages.error){ %>
+<%= messages.error %>
+<% } %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Login Here</h1>
+    <form action="/login" method="POST">
+        <%- include('./utility/form') %>
+
+        <button type="submit">Submit</button>
+        <br><br>
+        <a href="/register">Register</a>
+    </form>
+</body>
+</html>
